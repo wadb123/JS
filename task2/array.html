@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>玩家分配</title>
+    <link href="css/array.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header class="header-top">
+        <div class="top">
+            <span class="icon1" onclick="back()"></span>
+            <h2>参数设置</h2>
+            <span class="icon2"></span>
+        </div>
+    </header>
+
+    <main>
+        <table class="main-top">
+            <tr>
+                <th rowspan="2" class="box-l">
+                    <h1>玩家匹配</h1>
+                </th>
+                <td class="box-r-top">
+                    <div class="box-r">
+                        <div class="orange"></div>
+                        <h3>&nbsp;&nbsp;平<div class="box"></div>民&nbsp;&nbsp;<div id="orlm">3</div>人</h3>
+                    </div>
+                    <div class="box-r">
+                        <div class="orange"></div>
+                        <h3>&nbsp;&nbsp;杀<div class="box"></div>手&nbsp;&nbsp;<div id="killer">1</div>人</h3>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="box-r-bottom">
+                    <h4>点击设置</h4>
+                    <span class="icon3">
+                </td>
+            </tr>
+        </table>
+        <div class="main-center">
+            <input type="text" placeholder="平民词组" id="iptSm" maxlength="5" /><br>
+            <input type="text" placeholder="杀手词组" id="iptSs" maxlength="5" /><br>
+        </div>
+        <div class="main-bottom">
+            <div class="main-btm-t">
+                玩家人数<input type="text" value="4" maxlength="2" id="btm" oninput="getNumber()" />人
+            </div>
+            <div class="bottom-box">
+                <input type="button" class="img1" onclick="btLeft()">
+                <p class="slider-value" id="clp"></p>
+                <input type="range" id="rangeNumber" oninput="change()" name="change" value="4" min="4" max="18"
+                    step="1">
+                <input type="button" class="img3" onclick="btRight()">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <button id="footer-t">
+            <h2>去发牌</h2>
+        </button>
+    </footer>
+    <script src="js/array.js"></script>
+</body>
+
+</html>
