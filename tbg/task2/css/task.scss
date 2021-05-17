@@ -1,0 +1,34 @@
+$orange: rgb(255, 176, 29);
+$white: rgb(255, 255, 255);
+$blue: rgb(105, 210, 235);
+$black: rgb(29, 29, 29);
+$color250: rgb(250, 250, 250);
+$color: rgb(240, 240, 240);
+$color210: rgb(210, 210, 210);
+$n: none; //无；
+$abs: absolute;  //绝对定位
+$rel: relative;  //相对定位
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    background-color: $color;
+    min-width: 400px;
+    height: 100%;
+}
+.header-top {
+    position: fixed;
+    z-index: 99;
+    line-height: 0;
+    width: 100%;
+    background-color: $blue;
+}
+main {
+    text-align: center;
+    padding-top: 44px;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 380px;
+}

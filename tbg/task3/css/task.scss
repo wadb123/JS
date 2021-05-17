@@ -1,0 +1,228 @@
+$blue: rgb(105, 210, 235);
+$blue-t: rgb(185, 235, 245);
+$white: rgb(255, 255, 255);
+$color: rgb(255, 241, 195);
+$colorF1: rgb(245, 200, 120);
+$colorF2: rgb(130, 175, 155);
+$orange: orange;
+$fix: fixed; //固定定位
+$i-b: inline-block;//行 块
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body,html {
+    min-width: 380px;
+    background-color: $blue;
+}
+.header-t {
+    position: $fix;
+    z-index: 99;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    height: 45px;
+    background-color: $blue;
+    border-bottom: 1px solid $white;
+    p {
+        padding: 10px 0;
+        font-size: 20px;
+        color: $white;
+    }
+}
+span {
+    display: $i-b;
+    width: 45px;
+    height: 45px;
+    background-image: url(../ps/sprite-1.png);
+}
+.icon-l {
+    background-position: 45px -45px;
+}
+.icon-r {
+    background-position: 0 0;
+}
+
+main {
+    padding-top: 46px;
+    height: 100%;
+}
+
+//角色翻牌查看页面
+.top {
+    position: relative;
+    margin: 40px auto 0;
+    width: 334px;
+    border: 3px solid $white;
+    background-color: $color;
+    .box {
+        position: absolute;
+        text-align: center;
+        top: -22px;
+        left: 148px;
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+        color: red;
+        border-radius: 50%;
+        background-color: $white;
+        border: 2px solid $color;
+    }
+    #one {
+        margin: 100px 67px;
+        width: 200px;
+        height: auto;
+    }
+    #two {
+        margin: 13px 25px 0;
+        width: 90px;
+        height: auto;
+    }
+    #orange {
+        margin: 70px auto 0;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        background-color: $orange;
+    }
+    #role {
+        margin: 10px 20px;
+    }
+    h2, h3 {
+        padding-top: 10px;
+        padding-left: 25px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    h2 {
+        margin-top: 13.4px;
+        color: $blue;
+    }
+    h3 {
+        padding-bottom: 15px;
+        border-bottom: 1px solid $white;
+    }
+    h5 {
+        padding:  14.5px 25px;
+        text-align: left;
+        font-size: 1rem;
+        color: $orange;
+    }
+}
+
+.footer {
+    position: $fix;
+    bottom: 0;
+    z-index: 999;
+    padding-bottom: 20px;
+    width: 100%;
+    background-color: $blue;
+}
+.btm {
+    margin: 60px auto 0;
+    text-align: center;
+    width: 340px;
+    background-color: $orange;
+    h1 {
+        padding: 15px 0;
+        font-weight: 300;
+        font-size: 1.5rem;
+        color: $white;
+    }
+    .number {
+        display: $i-b;
+        width: 30px;
+        height: 43px;
+        font-size: 25px;
+        line-height: 1.8;
+        color: $white;
+    }
+}
+#bton {
+    width: 100%;
+    background-color: $orange;
+    border: none;
+    color: $white;
+}
+
+//法官页面
+.fa-top {
+    margin: 40px auto 0;
+    padding-bottom: 200px;
+    width: 360px;
+    .block {
+        margin: 0 20px;
+        width: 80px;
+        height: 120px;
+        text-align: center;
+        display: $i-b;
+        vertical-align: top;
+        .blockT {
+            border: 3px solid $white;
+            .block-t {
+                padding: 22px 0;
+                font-size: 1.2rem;
+                background-color: $colorF1;
+            }
+            .block-b {
+                font-size: .5rem;
+                color: $white;
+                background-color: $colorF2;
+            }
+        }
+    }
+}
+
+//淘汰玩家页面
+.top-t {
+    .box-t {
+        height: 50px;
+        background-color: $blue-t;
+    }
+    .box-r {
+        position: relative;
+        float: right;
+        margin: 7.5px 10px;
+        width: 35px;
+        height: 35px;
+        background-color: $orange;
+        border-radius: 50%;
+        .icon-audio {
+            position: absolute;
+            top: 7px;
+            left: 10px;
+            background-image: url(../ps/bofang.png);
+            background-size: 20px;
+            width: 20px;
+            height: 22px;
+        }
+    }
+    audio {
+        position: $fix;
+        right: -50px;
+        opacity: 0.0;
+        width: 100px;
+        height: 50px;
+    }
+    h6 {
+        margin-top: 15px;
+        margin-left: 10%;
+        display: $i-b;
+        font-size: 1rem;
+    }
+}
+.top-triangle {
+    margin-left: 15%;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-top-color: $blue-t;
+}
+.hiding {
+    .knife {
+        margin-top: 10px;
+        width: 15px;
+    }
+}
